@@ -6,6 +6,13 @@ public class Task {
     private String status;
     private String description;
 
+    public Task(){
+
+    }
+    public Task(String name) {
+        this.name = name;
+    }// в параметры добавить description и что еще нужно
+
     public int getId() {
         return id;
     }
