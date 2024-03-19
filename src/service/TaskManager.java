@@ -7,6 +7,7 @@ import model.Task;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Scanner;
 
 public class TaskManager {
     HashMap<Integer, Task> tasks;
@@ -15,7 +16,7 @@ public class TaskManager {
     private int generateId(){
         return ++seq;
     }
-    public TaskManager() {
+    public TaskManager(Scanner scanner) {
         this.tasks = new HashMap<>();
     }
 
