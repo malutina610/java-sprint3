@@ -11,6 +11,9 @@ public class Task {
     }
     public Task(String name) {
         this.name = name;
+        this.id = id;
+        this.status = status;
+        this.description = description;
     }// в параметры добавить description и что еще нужно
 
     public int getId() {
@@ -24,6 +27,8 @@ public class Task {
     public String getName() {
         return name;
     }
+
+
 
     public void setName(String name) {
         this.name = name;

@@ -10,19 +10,24 @@ public class Main {
         TaskManager taskManager = new TaskManager(scanner);
 
         String command = "";
+        String line = "";
+
         while (!command.equals("13")){
             printMenu();
 
             command = scanner.next();
             if (command.equals("1")) {
-                Task task = taskManager.create(new Task("Новая задача"));
+                System.out.println("Введите задачу для списка задач");
+                line = scanner.next();
+                if (!line.isEmpty()){
+                Task task = taskManager.create(new Task(line));
                 System.out.println(" Создана задача: " + task);
+                }
             } else if (command.equals("2")) {
-                Task task = 1;
-                Task taskFromManager = taskManager.get(task.getId());
-                System.out.println(" Get task: " + taskFromManager);
-            } else if (command.equals("3")) {
+                System.out.println(" /// ");
 
+            } else if (command.equals("3")) {
+                System.out.println(" /// ");
             } else if (command.equals("13")) {
                 System.out.println("До встречи !!!");
                 scanner.close();
@@ -32,18 +37,18 @@ public class Main {
         }
 
 
-        Task task = taskManager.create(new Task("Новая задача"));
-        System.out.println(" Create task: " + task);
-
-        Task taskFromManager = taskManager.get(task.getId());
-        System.out.println(" Get task: " + taskFromManager);
-
-        taskFromManager.setName("New name");
-        taskManager.update(taskFromManager);
-        System.out.println(" Update task: " + taskFromManager);
-
-        taskManager.delete(taskFromManager.getId());
-        System.out.println(" Delete task: " + task);
+//        Task task = taskManager.create(new Task("Новая задача"));
+//        System.out.println(" Create task: " + task);
+//
+//        Task taskFromManager = taskManager.get(task.getId());
+//        System.out.println(" Get task: " + taskFromManager);
+//
+//        taskFromManager.setName("New name");
+//        taskManager.update(taskFromManager);
+//        System.out.println(" Update task: " + taskFromManager);
+//
+//        taskManager.delete(taskFromManager.getId());
+//        System.out.println(" Delete task: " + task);
 
     }
     static void printMenu() {
@@ -52,14 +57,14 @@ public class Main {
         System.out.println("                           3 - Изменить существующую задачу; ");
         System.out.println("                           4 - Удалить задачу; ");
 
-        System.out.println("                           5 - Вести подзадачу; ");
+        System.out.println("                           5 - Ввести подзадачу; ");
         System.out.println("                           6 - Изменить подзадачу ");
         System.out.println("                           7 - Удалить подзадачу; ");
         System.out.println("                           8 - Получить список подзадач; ");
 
-        System.out.println("                           9 - Вести задачу подзадачи; ");
+        System.out.println("                           9 - Ввести задачу подзадачи; ");
         System.out.println("                           10 - Изменить задачу подзадачи ");
-        System.out.println("                           11 - Удалить задачу подзадачу; ");
+        System.out.println("                           11 - Получить список всех подзадачу; ");
         System.out.println("                           12 - Удалить задачу; ");
 
         System.out.println("                           13 - Выйти; ");
