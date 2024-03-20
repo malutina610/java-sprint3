@@ -17,14 +17,15 @@ public class Main {
 
             command = scanner.next();
             if (command.equals("1")) {
-                System.out.println("Введите задачу для списка задач");
+                System.out.println("Введите задачу для вашего списка задач");
                 line = scanner.next();
                 if (!line.isEmpty()){
                 Task task = taskManager.create(new Task(line));
                 System.out.println(" Создана задача: " + task);
                 }
             } else if (command.equals("2")) {
-                System.out.println(" /// ");
+                //taskManager.getAll();
+                System.out.println(" Ваш список задач" +  taskManager.getAll());
 
             } else if (command.equals("3")) {
                 System.out.println(" /// ");
@@ -58,14 +59,14 @@ public class Main {
         System.out.println("                           4 - Удалить задачу; ");
 
         System.out.println("                           5 - Ввести подзадачу; ");
-        System.out.println("                           6 - Изменить подзадачу ");
-        System.out.println("                           7 - Удалить подзадачу; ");
-        System.out.println("                           8 - Получить список подзадач; ");
+        System.out.println("                           6 - Получить список подзадач;");
+        System.out.println("                           7 - Изменить подзадачу; ");
+        System.out.println("                           8 - Удалить подзадачу; ");
 
-        System.out.println("                           9 - Ввести задачу подзадачи; ");
-        System.out.println("                           10 - Изменить задачу подзадачи ");
-        System.out.println("                           11 - Получить список всех подзадачу; ");
-        System.out.println("                           12 - Удалить задачу; ");
+        System.out.println("                           9 -  Ввести задачу подзадачи; ");
+        System.out.println("                           10 - Получить список всех задач подзадач;");
+        System.out.println("                           11 - Изменить задачу подзадачи; ");
+        System.out.println("                           12 - Удалить задачу подзадачи; ");
 
         System.out.println("                           13 - Выйти; ");
 
