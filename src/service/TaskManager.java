@@ -12,16 +12,24 @@ import java.util.Scanner;
 public class TaskManager {
     HashMap<Integer, Task> tasks;
     HashMap<Integer, Epic> epics;
+
+    public Integer countMap(){
+        Integer count = tasks.size();
+        return count;
+    }
+
     int seq = 0;
     private int generateId(){
         return ++seq;
     }
-    public TaskManager(Scanner scanner) {
-        this.tasks = new HashMap<>();
+   public TaskManager() {
+       this.tasks = new HashMap<>();
     }
 
-    public Task create(Task task) {
+    public Task create(String name, String description) {
+        Task task = new Task(name, description);
         task.setId(generateId());
+        task.setStatus("new");
         tasks.put(task.getId(), task);
         return task;
     }
@@ -32,7 +40,7 @@ public class TaskManager {
 
     // update каждому свой
     //epic приходит со статусом
-    public void update(Task task) {
+    public void update(int id, Task task) {
         tasks.put(task.getId(), task);// для epic так нельзя
     }
 
@@ -57,8 +65,7 @@ public class TaskManager {
     }
     // напечатать таски
     public  List<Task> getAll(){
-        return new ArrayList<>(tasks.values());
-
+        return new ArrayList<>(tasks.values());// values
     }
 
     public void delete(int id) {

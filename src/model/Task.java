@@ -9,12 +9,12 @@ public class Task {
     public Task(){
 
     }
-    public Task(String name) {
+    public Task(String name, String description) {
         this.name = name;
-        this.id = id;
-        this.status = status;
+       // this.id = id;
+       // this.status = status;
         this.description = description;
-    }// в параметры добавить description и что еще нужно
+    }
 
     public int getId() {
         return id;

@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d7d0a1b-97c0-4cdf-8938-09ef3dc15df0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/model/Epic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/SubTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/TaskManager.java" afterDir="false" />
+    <list default="true" id="9d7d0a1b-97c0-4cdf-8938-09ef3dc15df0" name="Changes" comment="commit start">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-sprint3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-sprint3/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/TaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/TaskManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +30,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2diYTjtnmbBJvOrqJUBzB1aRzXL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -40,7 +43,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/User/IdeaProjects/hello-java_copy"
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/RDash/IdeaProjects/java-sprint3"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -72,6 +76,23 @@
       <option name="presentableId" value="Default" />
       <updated>1710492388864</updated>
     </task>
+    <task id="LOCAL-00001" summary="second commit">
+      <option name="closed" value="true" />
+      <created>1710789443415</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1710789443415</updated>
+    </task>
+    <task id="LOCAL-00002" summary="commit start">
+      <option name="closed" value="true" />
+      <created>1710869728155</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1710869728155</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -84,5 +105,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="second commit" />
+    <MESSAGE value="commit start" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit start" />
   </component>
 </project>
